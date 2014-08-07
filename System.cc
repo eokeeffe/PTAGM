@@ -13,6 +13,7 @@
 
 #ifdef _LINUX
 #include <fcntl.h>
+#include <unistd.h>
 #endif
 
 #ifdef WIN32

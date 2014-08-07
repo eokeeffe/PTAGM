@@ -16,7 +16,7 @@ EXTRA_CFLAGS:= -DENABLE_MODELS_GAME
 # Or to change the compiler's optimization flags
 CC = g++
 COMPILEFLAGS = -I /usr/local/include /usr/include/GL /usr/include -D_LINUX -D_REENTRANT -Wall  -O3 -march=nocona -msse3 -fno-strict-aliasing
-LINKFLAGS = -L /usr/local/lib -lGVars3 -lcvd -llapack -lblas -lglut -lGLU -lopencv_core -lopencv_nonfree -lopencv_imgproc -lopencv_highgui -lopencv_objdetect -lopencv_calib3d $(3DSLIB)
+LINKFLAGS = -L /usr/local/lib -lGVars3 -lcvd -llapack  -lX11 -lXext -lblas -lglut -lGL -lGLU -lgfortran -lopencv_core -lopencv_nonfree -lopencv_imgproc -lopencv_highgui -lopencv_objdetect -lopencv_calib3d $(3DSLIB)
 
 # Edit this line to change video source
 VIDEOSOURCE = VideoSource_Linux_V4L.o

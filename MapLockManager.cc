@@ -13,6 +13,10 @@
 
 #include <iostream>
 
+#ifdef __linux__
+#include <unistd.h>
+#endif
+
 #ifdef WIN32
 #include <Windows.h>
 #endif

@@ -28,6 +28,10 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
+#ifdef __linux__
+#include <unistd.h>
+#endif
+
 #ifdef WIN32
 #include "direct.h"
 #endif

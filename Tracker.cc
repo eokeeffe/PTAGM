@@ -17,6 +17,7 @@
 
 #include <fstream>
 #include <fcntl.h>
+#include <unistd.h>
 
 namespace PTAMM {
 
